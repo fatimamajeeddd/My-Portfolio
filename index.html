@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatima | Information Engineering Technology Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Loading Experience</div>
+      <div class="loader-bar-bg">
+        <div id="loader-bar"></div>
+      </div>
+      <div id="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Background Canvas Container (Fixed / Sticky Wrapper) -->
+  <div id="canvas-container" class="sticky-wrapper">
+    <canvas id="scroll-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-text">Fatima<span>.</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="mailto:fatimamajeedofficialuse@gmail.com" class="btn-nav-contact">Email Me</a>
+    </div>
+  </header>
+
+  <!-- Content Overlay & Scroll Container -->
+  <div id="content-overlay" class="scroll-container">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <span class="hero-label">Information Engineering Technology</span>
+        <h1 class="hero-name">Hi, I'm <span>Fatima.</span></h1>
+        <p class="hero-subtitle">I build clean, functional web applications and enjoy learning how systems work.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View My Projects <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-container">
+      <div class="about-card">
+        <h2 class="section-heading">About <span>Me</span></h2>
+        <p class="about-text">
+          I'm a student of Information Engineering Technology, focused on understanding how software and systems are
+          designed and built. I'm particularly drawn to web development.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section-container">
+      <h2 class="section-heading">Technical <span>Skills</span></h2>
+      <div class="skills-grid">
+
+        <!-- Skill Item: HTML -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-html5 skill-icon"></i> HTML</span>
+            <span class="skill-percent">95%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: CSS -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-css3-alt skill-icon"></i> CSS</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: JavaScript -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-js skill-icon"></i> JavaScript</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: React.js -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-react skill-icon"></i> React.js</span>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 82%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: Node.js -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-node-js skill-icon"></i> Node.js</span>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 78%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: Python -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-python skill-icon"></i> Python</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: C++ -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-solid fa-code skill-icon"></i> C++</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: MySQL -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-solid fa-database skill-icon"></i> MySQL</span>
+            <span class="skill-percent">84%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 84%;"></div>
+          </div>
+        </div>
+
+        <!-- Skill Item: Git -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon"></i> Git</span>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-bar-track">
+            <div class="skill-bar-fill" style="width: 88%;"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section-container">
+      <h2 class="section-heading">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Task Manager -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="/projects/taskmanager.jpg" alt="Task Manager App" class="project-img">
+          </div>
+          <h3 class="project-title">Task Manager</h3>
+          <p class="project-desc">
+            A task management app with add/edit/delete, priority tags, filters, and progress tracking. Saves tasks in
+            the browser using localStorage.
+          </p>
+          <div class="project-buttons">
+            <a href="https://task-manager-fatima.vercel.app" target="_blank" class="btn-card-outline"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href="https://github.com/fatimamajeeddd/task-manager" target="_blank" class="btn-card-solid"><i
+                class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+
+        <!-- Project 2: Weather Dashboard -->
+        <div class="project-card">
+          <div class="project-img-wrapper">
+            <img src="/projects/weather.jpg" alt="Weather Dashboard App" class="project-img">
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            A weather app that looks up any city and shows live current conditions, using a live public weather API.
+          </p>
+          <div class="project-buttons">
+            <a href="https://live-weather-fatima.vercel.app" target="_blank" class="btn-card-outline"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href="https://github.com/fatimamajeeddd/weather-dashboard" target="_blank" class="btn-card-solid"><i
+                class="fa-brands fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-container">
+      <div class="contact-card">
+        <h2 class="section-heading">Let's <span>work together</span></h2>
+        <p class="contact-subtext">
+          I'm looking for internship and web development opportunities.
+        </p>
+        <div class="contact-btn-wrapper">
+          <a href="mailto:fatimamajeedofficialuse@gmail.com" class="btn-email-me">
+            Email Me <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <a href="#home" class="logo">
+            <span class="logo-text">Fatima<span>.</span></span>
+          </a>
+        </div>
+        <div class="footer-center">
+          <a href="mailto:fatimamajeedofficialuse@gmail.com" class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>fatimamajeedofficialuse@gmail.com</span>
+          </a>
+        </div>
+        <div class="footer-right">
+          <p>© 2026 Fatima. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
