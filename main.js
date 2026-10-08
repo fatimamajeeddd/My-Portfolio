@@ -21,15 +21,14 @@ let fitMode = 'contain';
 // Format image URL
 function getFrameUrl(index) {
   const paddedIndex = String(index).padStart(3, '0');
-  return `/frames/ezgif-frame-${paddedIndex}.jpg`;
+  return `./public/frames/ezgif-frame-${paddedIndex}.jpg`;
 }
-
 // Set up Canvas Resolution for Retina / High DPI displays
 function resizeCanvas() {
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   canvas.width = window.innerWidth * dpr;
   canvas.height = window.innerHeight * dpr;
-  
+
   drawFrame(Math.round(currentFrameIndex));
 }
 
@@ -95,10 +94,10 @@ function drawFrame(index) {
 
   ctx.fillStyle = '#000000';
   ctx.fillRect(0, 0, cWidth, cHeight);
-  
+
   ctx.imageSmoothingEnabled = true;
   ctx.imageSmoothingQuality = 'high';
-  
+
   ctx.drawImage(img, x, y, drawWidth, drawHeight);
 }
 
@@ -128,7 +127,7 @@ function animate() {
 function updateTargetFrame() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
   const maxScroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight;
-  
+
   if (maxScroll > 0) {
     const scrollFraction = Math.max(0, Math.min(1, scrollTop / maxScroll));
     targetFrameIndex = scrollFraction * (TOTAL_FRAMES - 1);
@@ -137,7 +136,7 @@ function updateTargetFrame() {
   // Active section link highlighting
   const sections = document.querySelectorAll('section');
   const navLinks = document.querySelectorAll('.nav-link');
-  
+
   let currentSectionId = '';
   sections.forEach((section) => {
     const sectionTop = section.offsetTop - 200;
@@ -177,7 +176,7 @@ function preloadImages() {
     img.onload = () => {
       images[frameIndex] = img;
       loadedCount++;
-      
+
       const percent = Math.floor((loadedCount / TOTAL_FRAMES) * 100);
       if (loaderBar) loaderBar.style.width = `${percent}%`;
       if (loaderPercent) loaderPercent.textContent = `${percent}%`;
